@@ -11,7 +11,7 @@ Abra o arquivo `watch-and-copy.ps1` e mude os caminhos da origem e do destino:
 
 ```powershell
 $global:pastaOrigem  = "C:\caminho\da\pasta\na\vm"
-$global:pastaDestino = "\\tsclient\C\caminho\da\pasta\no\pc\local"
+$global:pastaDestino = "\\tsclient\C\caminho\da\pasta\no\pc\local" # NÃO APAGUE O "\\tsclient\"
 ```
 
 ### Passo 2: Liberar o Acesso ao PC Local (RDP)
