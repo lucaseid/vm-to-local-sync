@@ -12,6 +12,8 @@ $action = {
 
     if (Test-Path $caminho -PathType Container) { return }
 
+    if ([System.IO.Path]::GetExtension($caminho).ToLower() -eq ".r") { return }
+
     if (!(Test-Path "\\tsclient\C")) { return }
 
     $dir = Split-Path $destino
